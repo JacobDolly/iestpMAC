@@ -1,0 +1,81 @@
+body{
+	margin: 0;
+	padding: 0;
+	background: url('../fondow.jpg') no-repeat center top;
+	background-size: cover;
+	font-family: sans-serif;
+	height: 100vh;
+}
+.contac{
+	width : 440px;
+	height: 520px;
+	background: white;
+	color: black;
+	top  : 50%;
+	left : 85%; 
+	position: absolute;
+	transform: translate(-50%, -50%);
+	box-sizing: border-box;
+	padding: 70px 30px;
+}
+.contac .logotipo{
+	width : 100px;
+	height: 100px;
+	border-radius: 50%;
+	position: absolute;
+	top: -50px;
+	left: calc(50% - 50px);
+
+}
+.contac h1{
+	margin:0;
+	padding:0 0 29px;
+	text-align: center;
+	font-size: 24px;
+
+	}
+
+.contac label{
+	margin:0;
+	padding:0;
+	font-weight: bold;
+	display: block; 
+}
+
+.contac input {
+	width: 100%;
+	margin-bottom:3px;
+}
+.contac input[type="text"],
+.contac input[type="password"]{
+height: 30px;
+font-size: 16px;
+
+}
+.contact select label[value="M"],
+.contact input[value="F"]{
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.contac input[type="submit"]{
+	border:none;
+	outline: none;
+	height: 35px;
+	width: 264px;
+	background: green;
+	font-size: 20px;
+	
+
+}
+.contac a{
+	text-decoration: none;
+	font-size: 12px;
+	line-height: 20px;
+}
+.contac a:hover {
+	color: #4654EC;
+}
+.nav navbar-nav navbar-right{
+	left: 89%;
+}
