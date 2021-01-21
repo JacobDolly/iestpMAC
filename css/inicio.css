@@ -1,0 +1,323 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.contenedor {
+  width: 95%;
+  max-width:1090px;
+  margin:auto;
+}
+ 
+.contenedor p {
+  margin-bottom:40px;
+}
+
+#contenedor{
+  overflow: hidden;
+}
+ #contenedor ul{
+  list-style: none;
+  display: inline-flex;
+  animation: slide 20s infinite alternate;
+
+
+ }
+
+ @keyframes slide{
+  0%{margin-left: 0px;}
+  20%{margin-left: 0px;}
+
+  25%{margin-left: -1090px;}
+  45%{margin-left: -1090px;}
+
+  50%{margin-left: -2180px;}
+  70%{margin-left: -2180px;}
+
+  75%{margin-left: -3270px;}
+  100%{margin-left: -3270px;}
+ }
+
+header nav {
+  background:#4BF04A;
+  margin-bottom:10px;
+
+}
+ 
+header nav ul {
+  list-style: none;
+  overflow: hidden;
+
+}
+ 
+header nav >ul >li {
+  float: left;
+}
+ 
+header nav ul li a {
+  display: block;
+  padding:20px;
+  color:#fff;
+  text-decoration: none;
+}
+ 
+header nav >ul >li a:hover {
+  background:#2980b9;
+  display: block;
+  transition: all 1s;
+}
+
+header nav ul li .Submenu{
+  background: #4BF04A;
+  position: absolute;
+  margin-top: -22%;
+
+}
+
+header nav ul li:hover> .Submenu{
+  
+  
+  display: flex;
+  padding: 8px;
+  margin: 3px;
+  transition: all 0.4s;
+  position: absolute;
+}
+
+#izquierda{
+float: left;
+padding: 10px;
+position: relative;
+display: flex;
+align-items: center;
+overflow: hidden;
+cursor: pointer;
+
+}
+#centro{
+float: left;
+padding: 10px;
+position: relative;
+display: flex;
+align-items: center;
+overflow: hidden;
+cursor: pointer;
+}
+#derecha{
+float: left;
+padding: 10px;
+position: relative;
+display: flex;
+align-items: center;
+overflow: hidden;
+cursor: pointer;
+}
+
+.txt{
+  text-align: center;
+  position: absolute;
+  transition: all 0.3s;
+  transform: scale(1);
+  opacity: 0;
+  background-color: blue;
+}
+.txt h2{
+  color: #FFF;
+}
+.txt  p{
+  color: #FFF;
+  padding: 5px 5px;
+}
+
+ .txt::before {
+  display: flex;
+  content: "";
+  position: absolute;
+  width: calc(100% - 15px);
+  height: 4px;
+  background: #FFF;
+  transition: all 0.3s;
+ }
+
+.txt::after {
+  display: flex;
+  content: "";
+  position: absolute;
+  width: calc(100% - 15px);
+  height: 4px;
+  background: #FFF;
+  transition: all 0.3s;
+ }
+
+ .txt::before{left: -100%; top: -15px;}
+ .txt::after{left: 100%; bottom: -15px;}
+
+ .txt:hover::before{
+  left: 3px;
+ }
+ .txt:hover::after{
+  left: 3px;
+ }
+ #izquierda:hover .txt{
+  transform: scale(1);
+  opacity: 1;
+ }
+
+
+.txt2{
+  text-align: center;
+  position: absolute;
+  transition: all 0.3s;
+  transform: scale(1);
+  opacity: 0;
+}
+.txt2 h2{
+  color: #FFF;
+}
+.txt2  p{
+  color: #FFF;
+  padding: 5px 5px;
+}
+
+ .txt2::before {
+  display: flex;
+  content: "";
+  position: absolute;
+  width: calc(100% - 15px);
+  height: 4px;
+  background: #FFF;
+  transition: all 0.3s;
+ }
+
+.txt2::after {
+  display: flex;
+  content: "";
+  position: absolute;
+  width: calc(100% - 15px);
+  height: 4px;
+  background: #FFF;
+  transition: all 0.3s;
+ }
+
+ .txt2::before{left: -100%; top: -24px;}
+ .txt2::after{left: 100%; bottom: -24px;}
+
+ .txt2:hover::before{
+  left: 3px;
+ }
+ .txt2:hover::after{
+  left: 3px;
+ }
+ #centro:hover .txt2{
+  transform: scale(1);
+  opacity: 1;
+ }
+ 
+
+.txt3{
+  text-align: center;
+  position: absolute;
+  transition: all 0.3s;
+  transform: scale(1);
+  opacity: 0;
+}
+.txt3 h2{
+  color: #FFF;
+}
+.txt3  p{
+  color: #FFF;
+  padding: 5px 5px;
+}
+
+ .txt3::before {
+  display: flex;
+  content: "";
+  position: absolute;
+  width: calc(100% - 15px);
+  height: 4px;
+  background: #FFF;
+  transition: all 0.3s;
+ }
+
+.txt3::after {
+  display: flex;
+  content: "";
+  position: absolute;
+  width: calc(100% - 15px);
+  height: 4px;
+  background: #FFF;
+  transition: all 0.3s;
+ }
+
+ .txt3::before{left: -100%; top: -24px;}
+ .txt3::after{left: 100%; bottom: -24px;}
+
+ .txt3:hover::before{
+  left: 3px;
+ }
+ .txt3:hover::after{
+  left: 3px;
+ }
+ #derecha:hover .txt3{
+  transform: scale(1);
+  opacity: 1;
+ }
+
+#parejo{
+float: left;
+left: 14px;
+position: relative;
+display: flex;
+}
+.parejo{
+  text-align: left;
+  position: absolute;
+}
+.parejo h3{
+  font-size: 20px;
+  color: black;
+  width: 442px;
+}
+.parejo  p{
+  color: black;
+  text-align: justify;
+  padding: 7px 0px;
+  width: 442px;
+}
+
+#parejo2{
+float: right;
+left: -435px;
+position: relative;
+display: flex;
+}
+.parejo2{
+  text-align: left;
+  position: absolute;
+}
+.parejo2 h3{
+  font-size: 20px;
+  color: black;
+  width: 418px;
+
+}
+.parejo2  p{
+  color: black;
+  text-align: justify;
+  padding: 7px 0px;
+  width: 418px;
+}
+
+
+/* --- Clase que agregaremos cuando el usuario haga scroll --- */
+.menu-fixed {
+  position:fixed;
+  z-index:1000;
+  top:0;
+  max-width:1090px;
+  width:100%;
+  box-shadow:0px 4px 3px rgba(0,0,0,.5);
+}
+
+
